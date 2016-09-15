@@ -13,3 +13,5 @@ Du kan också använda ett annat byggsystem om du vill.
 - Använd Helvetica eller Arial som font.
 
 - Du behöver **inte** lägga till pilen på “Läs mer” knappen.
+  
+- Du får använda ett js ramverk om du vill.
