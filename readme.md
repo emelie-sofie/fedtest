@@ -1,9 +1,8 @@
-**Läs igenom alla uppgifter noggrant  innan du börjar.**
+**Läs igenom alla uppgifter noggrant innan du börjar.**
 
-För att starta projektet -> "*npm install*" -> "*gulp watch*". Du behöver en global installation av Gulp.
-Du kan också använda ett annat byggsystem om du vill.
+För att starta projektet -> "*npm install*" -> "*gulp watch*". Eller använd valfritt byggverktyg.
 
-# Bygg *news-teasers* med data från json.
+# Bygg *news-teasers*
 - Se skärmdump "news teasers.jpg"
 
 - Bygg *news-teasers* i ett responsivt grid system med 4, 2 och 1 kolumn beroende på skärmstorlek. Du behöver inte bygga någonting annat (dvs. ingen header, footer eller artikel).
