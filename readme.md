@@ -1,12 +1,21 @@
+## Instruktioner
 **Läs igenom alla uppgifter noggrant innan du börjar.**
 
-För att starta projektet -> "*npm install*" -> "*gulp watch*". Eller använd valfritt byggverktyg.
+Uppgiften går ut på att bygga en lista med nyhetsartiklar samt en knapp för att ladda flera nyheter. Artiklarna i listan ska bestå av bild, rubrik, text och en 'läs mer'-knapp (se den bifogade skärmdumpen "news teasers.jpg" för önskad design). Du behöver inte bygga någonting annat (dvs. ingen header, footer eller artikelsida).'
 
-# Bygg *news-teasers*
-- Se skärmdump "news teasers.jpg"
+- Innehållet i listan ska dynamiskt hämtas från filen 'input.json'.
 
-- Bygg *news-teasers* i ett responsivt grid system med 4, 2 och 1 kolumn beroende på skärmstorlek. Du behöver inte bygga någonting annat (dvs. ingen header, footer eller artikel).
+- Sidan ska vara responsiv och presentera olika antal kolumner för mobil, tablet och desktop.
 
-- Hämta data från "input.json" och visa initialt de fyra första nyheterna. Hämta därefter fyra nästkommande artiklar vid klick på "Läs mer".
-  
 - Du får använda ett js ramverk om du vill.
+
+## Konfiguration / miljö
+För att lösa uppgiften kan du antingen använda det medföljande gulpjobbet eller ett annat valfritt byggverktyg. Förbättra gärna design och funktionalitet efter eget tycke, men diskutera/redogör gärna för detta tillsammans med eventuella uppdaterade bygginstruktioner när du skickar in testet.
+
+**För att starta projektet med gulpjobbet:**
+
+```npm install --global gulp-cli```
+
+```npm install```
+
+```gulp watch```

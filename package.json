@@ -10,7 +10,8 @@
   "license": "ISC",
   "homepage": "https://github.com/fedtest/fedtest#readme",
   "scripts": {
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "postinstall": "gulp"
   },
   "devDependencies": {
     "browserify": "13.1.x",
