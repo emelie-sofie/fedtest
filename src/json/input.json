@@ -1,6 +1,36 @@
 {
     "articles": [
         {
+            "title": "Mors dag och mors filmer",
+            "date": "24 maj 2017",
+            "teaser": "På Mors dag den 28 maj kan det vara på sin plats att se en film som på ett eller annat sätt handlar om just henne. Kanske är det rentav din egen dag? Hurra! Oavsett omständigheterna ger vi här några tips. ",
+            "image": "https://www.comhem.se/asset/2zxwgcm7u48q/6DPegAYzIIWoWy4CkCcuQ6/2c2b9b70d7dc1245ba5bb69765a9dcd0/Mothers_day_cover.jpg"
+        }, {
+            "title": "Äventyrssporten fortsätter resten av maj",
+            "date": "23 maj 2017",
+            "teaser": "Vi fortsätter frivisningen av kanalen Extreme Sports Channel under hela maj månad! Där upplever du surfing, mountainbike och en massa annat på kanalplats 116.",
+            "image": "https://www.comhem.se/asset/2zxwgcm7u48q/4Sld3X3gWkQQGeWswe8CI0/8592e832d8e77902af0241c8fe5de2d5/trixbild.jpg"
+        }, {
+            "title": "Mest sedda hyrfilmerna i Play & Film",
+            "date": "23 maj 2017",
+            "teaser": "Är du filmsugen men har svårt att bestämma dig för vad du ska se? Här får du tips och kan läsa mer om hyrfilmerna som toppar listan i Play & Film just nu.",
+            "image": "https://www.comhem.se/asset/2zxwgcm7u48q/23uOJ8y6puE2qMGqMum8WK/f6d6ee9b8f9d10349986af0acc438479/hundraettaringen_artikel2.jpg"
+        }, {
+            "title": "Sverigepremiär för The Moorside på Cirkus",
+            "date": "22 maj 2017",
+            "teaser": "I playtjänsten Cirkus kan du nu se den hyllade serien The Moorside, om en nioåring flicka från norra England som plötsligt försvinner. Miniserien i två delar är producerad av BBC.",
+            "image": "https://www.comhem.se/asset/2zxwgcm7u48q/4NcwzouhPqeOu6kkyi66I4/e90706d795132a50619ace50998f5e87/TheMoorside.jpg"
+        }, {
+            "title": "Frivisning på TNT ger dig mängder av serier",
+            "date": "17 maj 2017",
+            "teaser": "För dig som är digital-tv-kund frivisar vi kanalen TNT ända fram till månadsskiftet, så du kan börja följa serier som du kanske inte sett tidigare. Dessutom finns serier som du kan se när du själv vill.",
+            "image": "https://www.comhem.se/asset/2zxwgcm7u48q/6KriYBapDa6wYeKqyacsgW/c22303d6e730f4af7b0340cdc3a4d418/incorporated-artikel.jpg"
+        }, {
+            "title": "Vinnarna i tävlingen utsedda",
+            "date": "15 maj 2017",
+            "teaser": "Kör så långt du kan på en minut! Tag dig in på topplistan med chans att vinna fina priser. Tävlingen pågick till och med den 4 april, men du kan spela hur många gånger du vill.",
+            "image": "https://www.comhem.se/asset/2zxwgcm7u48q/6izrKvOVc4GgAeA4UcIwku/b53d00f4dd3c2925e798d2c80057ec0e/race_puff_1280x720.jpg"
+        }, {
             "title": "Mest sedda hyrfilmerna i Play & Film",
             "date": "24 augusti 2016",
             "teaser": "Är du filmsugen men har svårt att bestämma dig för vad du ska se? Här får du tips och kan läsa mer om hyrfilmerna som toppar listan i Play & Film just nu.",
