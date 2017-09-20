@@ -7,7 +7,7 @@ Uppgiften går ut på att bygga en lista med nyhetsartiklar samt en knapp för a
 
 - Sidan ska vara responsiv och presentera olika antal kolumner för mobil, tablet och desktop.
 
-- Du får använda ett js ramverk om du vill.
+- Vi ser gärna att du använder för uppdraget relevanta tekniker och ramverk.
 
 ## Konfiguration / miljö
 För att lösa uppgiften kan du antingen använda det medföljande gulpjobbet eller ett annat valfritt byggverktyg. Förbättra gärna design och funktionalitet efter eget tycke, men diskutera/redogör gärna för detta tillsammans med eventuella uppdaterade bygginstruktioner när du skickar in testet.
