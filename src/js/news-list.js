@@ -8,17 +8,20 @@ class NewsList extends Component {
   constructor() {
     super();
     this.showMore = this.showMore.bind(this);
-    this.state = { limit: 4, showMore: true };
+    this.state = {
+      limit: 4,
+      showMore: true
+    };
   }
 
   render() {
     return (
       <div className="all-news-container">
         <div className="news-container">
-          { this.renderList() }
+          {this.renderList()}
         </div>
         <div>
-          { this.renderButton() }
+          {this.renderButton()}
         </div>
       </div>
     );
@@ -64,6 +67,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
+  // For selecting one particular article
   return bindActionCreators({ }, dispatch);
 }
 
