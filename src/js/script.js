@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
-import NewsList from '../js/news-list';
+import NewsList from './news-list';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
