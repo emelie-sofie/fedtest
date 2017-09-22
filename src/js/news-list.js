@@ -1,52 +1,59 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectNews } from '../js/index';
 import { bindActionCreators } from 'redux';
+import NewsItem from '../js/news-item';
 
 class NewsList extends Component {
-  renderList() {
-    // Render the first 4 items, the rest when clicking more news..
-    return this.props.news.map(news_item => {
-      return (
-        <div
-          className="box"
-          key={news_item.title}>
-          <img
-            //onClick={ () => this.props.selectNews(news_item) }
-            src={news_item.image}
-            className="img">
-          </img>
-          <div className="intro-div">
-            <h3 className="uppercase">{news_item.title}</h3>
-            <hr />
-            <br />
-            <h5 className="uppercase">{news_item.date}</h5>
-            <p>{news_item.teaser}</p>
-            <button
-              //onClick={ () => this.props.selectNews(news_item) }
-              className="show-more-button">
-              LÄS MER >
-            </button>
-          </div>
-        </div>
-      );
-    });
+
+  constructor() {
+    super();
+    this.showMore = this.showMore.bind(this);
+    this.state = { limit: 4, showMore: true };
   }
 
   render() {
     return (
       <div className="all-news-container">
         <div className="news-container">
-          {this.renderList()}
+          { this.renderList() }
         </div>
-        <div className="more-news-container">
-          <button
-            //onClick={ () => this.props.something(something) }
-            className="show-more-news-button">VISA FLER NYHETER</button>
-          <div></div>
+        <div>
+          { this.renderButton() }
         </div>
       </div>
     );
+  }
+
+  renderList() {
+    var initialLoad = this.props.news.slice(0, this.state.limit);
+
+    return initialLoad.map(news_item => {
+      return (
+        <NewsItem
+          key={news_item.title}
+          news_item={news_item}
+        />
+      );
+    });
+  }
+
+  renderButton() {
+    // show button only if state.showMore set to true
+    if (!this.state.showMore) return null;
+    return (
+      <button
+        onClick={this.showMore}
+        className="show-more-news-button">
+        VISA FLER NYHETER
+      </button>
+    );
+  }
+
+  showMore() {
+    this.setState({
+      showMore: false,
+      limit: this.props.news.length
+    });
   }
 }
 
@@ -57,7 +64,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectNews: selectNews }, dispatch);
+  return bindActionCreators({ }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewsList);

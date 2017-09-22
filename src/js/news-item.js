@@ -1,27 +1,29 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
 
-class NewsItem extends Component {
-  render() {
-    if (!this.props.news_item) {
-      return <div></div>
-    }
-
-    return (
-      <div>
-        <img src={this.props.news_item.image} width='400px'></img>
-        <h3>{this.props.news_item.title}</h3>
-        <h5>{this.props.news_item.date}</h5>
-        <p>{this.props.news_item.teaser}</p>
+const NewsItem = ({news_item}) => {
+  if (!news_item) {
+    return <div>Loading...</div>;
+  }
+  return (
+      <div
+        className="box"
+        key={news_item.title}>
+        <img
+          src={news_item.image}
+          className="img">
+        </img>
+        <div className="intro-div">
+          <h3 className="uppercase">{news_item.title}</h3>
+          <hr />
+          <br />
+          <h5 className="uppercase">{news_item.date}</h5>
+          <p>{news_item.teaser}</p>
+          <button
+            className="show-more-button">
+            LÄS MER >
+          </button>
+        </div>
       </div>
-    );
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    news_item: state.selectedNews
-  }
-}
-
-export default connect(mapStateToProps)(NewsItem);
+    )
+};
+export default NewsItem;
