@@ -6,6 +6,7 @@ const livereload = require('gulp-livereload');
 const nodemon = require('gulp-nodemon');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
+const babelify = require('babelify');
 
 gulp.task('default', ['less', 'js', 'html', 'json']);
 
@@ -32,6 +33,7 @@ gulp.task('js', () => {
         entries: 'src/js/script.js',
         debug: true,
     })
+        .transform(babelify)
         .bundle()
         .pipe(source('script.js'))
         .pipe(buffer())
