@@ -13,14 +13,14 @@ const NewsItem = ({news_item}) => {
           className="img">
         </img>
         <div className="intro-div">
-          <h3 className="uppercase">{news_item.title}</h3>
+          <h2 className="uppercase">{news_item.title}</h2>
           <hr />
           <br />
           <h5 className="uppercase">{news_item.date}</h5>
           <p>{news_item.teaser}</p>
           <button
             className="show-more-button">
-            LÄS MER >
+            LÄS MER ＞
           </button>
         </div>
       </div>
