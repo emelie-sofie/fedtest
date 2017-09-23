@@ -16,7 +16,7 @@ class NewsList extends Component {
 
   render() {
     return (
-      <div className="all-news-container">
+      <div>
         <div className="news-container">
           {this.renderList()}
         </div>
@@ -30,10 +30,10 @@ class NewsList extends Component {
   renderList() {
     var initialLoad = this.props.news.slice(0, this.state.limit);
 
-    return initialLoad.map(news_item => {
+    return initialLoad.map((news_item, index) => {
       return (
         <NewsItem
-          key={news_item.title}
+          key={index}
           news_item={news_item}
         />
       );

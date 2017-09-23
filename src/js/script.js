@@ -11,9 +11,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <NewsList />
-      </div>
+      <NewsList />
     );
   }
 }
