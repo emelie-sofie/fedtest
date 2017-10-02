@@ -1,34 +1,30 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import NewsItem from './news-item';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import NewsItem from './news-item'
 
 class NewsList extends Component {
 
   constructor() {
-    super();
-    this.showMore = this.showMore.bind(this);
+    super()
+    this.showMore = this.showMore.bind(this)
     this.state = {
       limit: 4,
       showMore: true
-    };
+    }
   }
 
   render() {
     return (
-      <div>
-        <div className="news-container">
-          {this.renderList()}
-        </div>
-        <div>
-          {this.renderButton()}
-        </div>
-      </div>
-    );
+      <section className="news-container">
+        {this.renderList()}
+        {this.renderButton()}
+      </section>
+    )
   }
 
-  renderList() {
-    var initialLoad = this.props.news.slice(0, this.state.limit);
+  renderList = () => {
+    var initialLoad = this.props.news.slice(0, this.state.limit)
 
     return initialLoad.map((news_item, index) => {
       return (
@@ -36,39 +32,39 @@ class NewsList extends Component {
           key={index}
           news_item={news_item}
         />
-      );
-    });
+      )
+    })
   }
 
-  renderButton() {
+  renderButton = () => {
     // show button only if state.showMore set to true
-    if (!this.state.showMore) return null;
+    if (!this.state.showMore) return null
     return (
       <button
         onClick={this.showMore}
         className="show-more-news-button">
         VISA FLER NYHETER
       </button>
-    );
+    )
   }
 
-  showMore() {
+  showMore = () => {
     this.setState({
       showMore: false,
       limit: this.props.news.length
-    });
+    })
   }
 }
 
 function mapStateToProps(state) {
   return {
     news: state.news
-  };
+  }
 }
 
 function mapDispatchToProps(dispatch) {
   // For selecting one particular article
-  return bindActionCreators({ }, dispatch);
+  return bindActionCreators({ }, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewsList);
+export default connect(mapStateToProps, mapDispatchToProps)(NewsList) 

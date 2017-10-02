@@ -1,29 +1,31 @@
 /** Your styles go here **/
 body {
-  max-width: 1400px;
+  // max-width: 1400px;
   background-color: #e6ebe6;
   margin: 3%;
 }
 
 .news-container {
   background-color: #e6ebe6;
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .more-news-container {
   width: 100%;
 }
 
-.box {
-  width: 318px;
-  float: left;
-  min-height: 600px;
+.news-item {
+  max-width: 318px;
 }
 
 .img {
   width: 100%;
 }
 
-.intro-div {
+.intro {
   margin: 9px;
   margin-bottom: 30px;
   font-family: 'Open Sans', sans-serif;
@@ -56,13 +58,19 @@ body {
   text-transform: uppercase;
 }
 
-hr {
+.hr {
+  background-color: #000000;
+  border: 1px solid #000000;
+  margin: 10px 0 20px;
   width: 50px;
-  border-style: groove;
-  border-color: #151615;
-  float: left;
-  margin-top: 0px;
 }
+// hr {
+//   width: 50px;
+//   border-style: groove;
+//   border-color: #151615;
+//   float: left;
+//   margin-top: 0px;
+// }
 
 .news-title, .news-date{
   font-family: 'Lato', sans-serif;
