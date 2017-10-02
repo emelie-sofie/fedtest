@@ -2,17 +2,17 @@ import React from 'react'
 
 const NewsItem = ({news_item}) => {
   if (!news_item) {
-    return <div>Loading...</div> 
+    return <div>Loading...</div>
   }
   return (
-      <section
+      <article
         className="news-item"
         key={news_item.title}>
         <img
           src={news_item.image}
           className="img">
         </img>
-        <article className="intro">
+        <section className="intro">
           <header>
             <h2 className="uppercase news-title">{news_item.title}</h2>
             <div className="hr"></div>
@@ -23,8 +23,8 @@ const NewsItem = ({news_item}) => {
             className="show-more-button">
             LÄS MER ＞
           </button>
-        </article>
-      </section>
+        </section>
+      </article>
     )
 }
 export default NewsItem

@@ -23,20 +23,19 @@ class NewsList extends Component {
     )
   }
 
-  renderList = () => {
-    var initialLoad = this.props.news.slice(0, this.state.limit)
+  renderList() {
+    const initialLoad = this.props.news.slice(0, this.state.limit)
 
     return initialLoad.map((news_item, index) => {
-      return (
+      return
         <NewsItem
           key={index}
           news_item={news_item}
         />
-      )
-    })
+      })
   }
 
-  renderButton = () => {
+  renderButton() {
     // show button only if state.showMore set to true
     if (!this.state.showMore) return null
     return (
@@ -48,7 +47,7 @@ class NewsList extends Component {
     )
   }
 
-  showMore = () => {
+  showMore() {
     this.setState({
       showMore: false,
       limit: this.props.news.length
@@ -67,4 +66,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ }, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewsList) 
+export default connect(mapStateToProps, mapDispatchToProps)(NewsList)
