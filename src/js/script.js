@@ -12,7 +12,7 @@ export default class App extends Component {
   render() {
     return (
       <NewsList />
-    ) 
+    )
   }
 }
 
@@ -20,5 +20,5 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <App />
   </Provider>
-  , document.body
+  , document.querySelector('#root')
 )

@@ -33,7 +33,7 @@ gulp.task('js', () => {
         entries: 'src/js/script.js',
         debug: true,
     })
-        .transform(babelify)
+        .transform(babelify, {presets: ["env", "react"]})
         .bundle()
         .pipe(source('script.js'))
         .pipe(buffer())
