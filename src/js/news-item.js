@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const NewsItem = ({news_item}) => {
   if (!news_item) {
@@ -25,6 +25,6 @@ const NewsItem = ({news_item}) => {
         </button>
       </section>
     </article>
-  );
+  )
 }
-export default NewsItem;
+export default NewsItem
